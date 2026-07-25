@@ -1,86 +1,116 @@
 [
   {
+    "name": "Gun Detection and Alert System",
+    "description": "Final year project to detect and tracking gun then send alert to line OA",
+    "technologies": [
+      "Python",
+      "YOLOV5",
+      "Pytorch",
+      "Line OA",
+      "Firebase",
+      "Flask Web Hook"
+    ],
+    "link": "https://youtu.be/RtXs-CbPz80?si=A9LfISTm-7RkGZAn",
+    "type": "iframe",
+    "video": "https://www.youtube.com/embed/RtXs-CbPz80?si=lRfD-A1EYQ4IbUpv",
+    "preview": "resource/gun-detection/armed-alert.webp",
+    "previewMessage": "Full Video"
+  },
+  {
+    "name": "Account Management Microservice",
+    "description": "Microservice for account management compose external order by database-defined mappings, one request many external orders",
+    "technologies": [
+      "Java",
+      "Spring Boot",
+      "Oracle",
+      "MsSQL",
+      "Smockin"
+    ],
+    "link": "https://github.com/BrokznAngzl/microservice",
+    "type": "image",
+    "images": [
+      "resource/account-management/image1.webp",
+      "resource/account-management/image2.webp",
+      "resource/account-management/image3.webp",
+      "resource/account-management/image4.webp",
+      "resource/account-management/image5.webp",
+      "resource/account-management/image6.webp"
+    ],
+    "preview": "resource/account-management/image1.webp",
+    "previewMessage": "Github Repository"
+  },
+  {
     "name": "Infrastructure Design",
-    "description": "A personal portfolio website to showcase my skills and personal projects.",
+    "description": "My infrastructure design for microservice architecture and order management system",
     "technologies": [
-      "React",
-      "Tailwind CSS",
-      "AOS"
+      "Linux Server",
+      "Docker",
+      "OpenShift",
+      "Kubernetes",
+      "Nginx"
     ],
-    "link": "#",
+    "type": "image",
     "images": [
-      "resource/microservice-structure.webp",
-      "resource/order-concept.webp"
-    ]
+      "resource/microservice-infra/microservice-structure.webp",
+      "resource/microservice-infra/order-concept.webp"
+    ],
+    "preview": "resource/microservice-infra/microservice-structure.webp"
   },
   {
-    "name": "Portfolio Website",
-    "description": "A personal portfolio website to showcase my skills and personal projects.",
+    "name": "CRUD GUI",
+    "description": "GUI for farm information management",
     "technologies": [
       "React",
       "Tailwind CSS",
-      "AOS"
+      "AOS",
+      "I18N",
+      "AutoTable"
     ],
-    "link": "#",
+    "link": "https://porky-management.onrender.com",
+    "type": "image",
     "images": [
-      "xx",
-      "xx"
-    ]
+      "resource/crud-gui/preview1.webp",
+      "resource/crud-gui/preview3.webp",
+      "resource/crud-gui/preview4.webp",
+      "resource/crud-gui/preview21.webp",
+      "resource/crud-gui/preview22.webp",
+      "resource/crud-gui/preview23.webp"
+    ],
+    "preview": "resource/crud-gui/preview1.webp",
+    "previewMessage": "Deployment"
   },
   {
-    "name": "Portfolio Website",
-    "description": "A personal portfolio website to showcase my skills and personal projects.",
+    "name": "CRUD API",
+    "description": "CRUD API for farm information management",
     "technologies": [
-      "React",
-      "Tailwind CSS",
-      "AOS"
+      "Java",
+      "Spring Boot",
+      "PostgreSQL",
+      "Resful API"
     ],
-    "link": "#",
+    "link": "https://github.com/BrokznAngzl/crud-api",
+    "type": "image",
     "images": [
-      "xx",
-      "xx"
-    ]
+      "resource/crud-api/preview1.webp"
+    ],
+    "preview": "resource/crud-api/preview1.webp",
+    "previewMessage": "Github Repository"
   },
   {
-    "name": "Portfolio Website",
-    "description": "A personal portfolio website to showcase my skills and personal projects.",
+    "name": "KUSE Search Engine",
+    "description": "Google Clone for KUSE Search Engine",
     "technologies": [
       "React",
       "Tailwind CSS",
       "AOS"
     ],
-    "link": "#",
+    "link": "https://elgoog.onrender.com",
+    "type": "image",
     "images": [
-      "xx",
-      "xx"
-    ]
-  },
-  {
-    "name": "Portfolio Website",
-    "description": "A personal portfolio website to showcase my skills and personal projects.",
-    "technologies": [
-      "React",
-      "Tailwind CSS",
-      "AOS"
+      "resource/search-engine/preview1.webp",
+      "resource/search-engine/preview2.webp"
     ],
-    "link": "#",
-    "images": [
-      "xx",
-      "xx"
-    ]
-  },
-  {
-    "name": "Portfolio Website",
-    "description": "A personal portfolio website to showcase my skills and personal projects.",
-    "technologies": [
-      "React",
-      "Tailwind CSS",
-      "AOS"
-    ],
-    "link": "#",
-    "images": [
-      "xx",
-      "xx"
-    ]
+    "preview": "resource/search-engine/preview1.webp",
+    "previewMessage": "Deployment"
   }
 ]

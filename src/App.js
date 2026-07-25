@@ -6,7 +6,7 @@ import "aos/dist/aos.css";
 function App() {
     AOS.init({
         // config AOS
-        duration: 1000
+        duration: 1250
     });
 
     return (
