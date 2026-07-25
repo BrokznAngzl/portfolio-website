@@ -13,13 +13,13 @@ function Hero() {
                     {/* Left Content */}
                     <div className="text-center lg:text-left">
             <span className="inline-block px-3 py-1 text-xs font-semibold tracking-wider text-primary uppercase rounded-full bg-primary/10 mb-4">
-              Full Stack Developer
+              Backend Developer
             </span>
 
                         <h1 className="text-4xl sm:text-5xl lg:text-6xl font-bold leading-tight mb-4">
                             Hi, I'm{" "}
                             <span className="text-gradient">
-                Penguin
+                Wisarut
               </span>
                         </h1>
 
@@ -44,10 +44,10 @@ function Hero() {
                             </a>
 
                             <a
-                                href="#contact"
+                                href="https://th.linkedin.com/in/wisarut-hakaen-beng" target="_blank"
                                 className="px-8 py-3.5 rounded-lg border-2 border-primary/30 text-gray-300 font-semibold hover:bg-primary/5 hover:border-primary/50 transition-all duration-300"
                             >
-                                Contact Me
+                                Linkedin
                             </a>
                         </div>
 

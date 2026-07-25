@@ -13,7 +13,7 @@ function Project(props) {
                     onClick={(e) => e.stopPropagation()}
                     className="inline-flex items-center text-primary font-semibold hover:text-secondary transition-colors"
                 >
-                    {project.previewMessage}
+                    {project.linkType}
                     <span className="ml-2">→</span>
                 </a>
             )

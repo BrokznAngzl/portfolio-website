@@ -8,7 +8,7 @@ function ProfileImage() {
                 {/* Profile Image */}
                 <div className="relative h-64 w-64 sm:h-80 sm:w-80 rounded-2xl overflow-hidden border-2 border-gray-800 bg-gradient-to-br from-gray-900 to-gray-800">
                     <img
-                        src="https://avatars.githubusercontent.com/u/124576166?v=4"
+                        src="port-profile.jpg"
                         alt="Kuldeep Prajapati"
                         className="w-full h-full object-cover"
                     />

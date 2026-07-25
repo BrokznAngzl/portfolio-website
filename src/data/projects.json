@@ -1,7 +1,7 @@
 [
   {
     "name": "Gun Detection and Alert System",
-    "description": "Final year project to detect and tracking gun then send alert to line OA",
+    "description": "Final year project to detect and track person who got gun then send alert to line OA",
     "technologies": [
       "Python",
       "YOLOV5",
@@ -11,10 +11,10 @@
       "Flask Web Hook"
     ],
     "link": "https://youtu.be/RtXs-CbPz80?si=A9LfISTm-7RkGZAn",
+    "linkType": "Full Video",
     "type": "iframe",
     "video": "https://www.youtube.com/embed/RtXs-CbPz80?si=lRfD-A1EYQ4IbUpv",
-    "preview": "resource/gun-detection/armed-alert.webp",
-    "previewMessage": "Full Video"
+    "preview": "resource/gun-detection/armed-alert.webp"
   },
   {
     "name": "Account Management Microservice",
@@ -27,6 +27,7 @@
       "Smockin"
     ],
     "link": "https://github.com/BrokznAngzl/microservice",
+    "linkType": "Github Repository",
     "type": "image",
     "images": [
       "resource/account-management/image1.webp",
@@ -36,8 +37,7 @@
       "resource/account-management/image5.webp",
       "resource/account-management/image6.webp"
     ],
-    "preview": "resource/account-management/image1.webp",
-    "previewMessage": "Github Repository"
+    "preview": "resource/account-management/image1.webp"
   },
   {
     "name": "Infrastructure Design",
@@ -62,11 +62,11 @@
     "technologies": [
       "React",
       "Tailwind CSS",
-      "AOS",
       "I18N",
       "AutoTable"
     ],
     "link": "https://porky-management.onrender.com",
+    "linkType": "Deployment",
     "type": "image",
     "images": [
       "resource/crud-gui/preview1.webp",
@@ -76,8 +76,7 @@
       "resource/crud-gui/preview22.webp",
       "resource/crud-gui/preview23.webp"
     ],
-    "preview": "resource/crud-gui/preview1.webp",
-    "previewMessage": "Deployment"
+    "preview": "resource/crud-gui/preview1.webp"
   },
   {
     "name": "CRUD API",
@@ -89,28 +88,27 @@
       "Resful API"
     ],
     "link": "https://github.com/BrokznAngzl/crud-api",
+    "linkType": "Github Repository",
     "type": "image",
     "images": [
       "resource/crud-api/preview1.webp"
     ],
-    "preview": "resource/crud-api/preview1.webp",
-    "previewMessage": "Github Repository"
+    "preview": "resource/crud-api/preview1.webp"
   },
   {
     "name": "KUSE Search Engine",
     "description": "Google Clone for KUSE Search Engine",
     "technologies": [
       "React",
-      "Tailwind CSS",
-      "AOS"
+      "Tailwind CSS"
     ],
     "link": "https://elgoog.onrender.com",
+    "linkType": "Deployment",
     "type": "image",
     "images": [
       "resource/search-engine/preview1.webp",
       "resource/search-engine/preview2.webp"
     ],
-    "preview": "resource/search-engine/preview1.webp",
-    "previewMessage": "Deployment"
+    "preview": "resource/search-engine/preview1.webp"
   }
 ]

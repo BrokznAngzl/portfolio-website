@@ -169,6 +169,20 @@ function PopUp({ project, onClose }) {
         return null;
     };
 
+    function renderLink() {
+        if (project.link) {
+            return (
+                <a
+                    href={project.link} target="_blank"
+                    className="inline-flex items-center text-primary font-semibold hover:text-secondary transition-colors"
+                >
+                    {project.linkType}
+                    <span className="ml-2">→</span>
+                </a>
+            )
+        }
+    }
+
     return (
         <div className="fixed inset-0 z-50 flex items-center justify-center bg-black/70 px-4">
             <div
@@ -203,13 +217,7 @@ function PopUp({ project, onClose }) {
                     ))}
                 </div>
 
-                <a
-                    href={project.link}
-                    className="inline-flex items-center text-primary font-semibold hover:text-secondary transition-colors"
-                >
-                    View Project
-                    <span className="ml-2">→</span>
-                </a>
+                {renderLink()}
             </div>
         </div>
     );
