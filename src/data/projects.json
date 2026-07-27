@@ -40,6 +40,23 @@
     "preview": "resource/account-management/image1.webp"
   },
   {
+    "name": "N8N Agent",
+    "description": "Agent for N8N workflow automation",
+    "technologies": [
+      "N8N"
+    ],
+    "link": "",
+    "linkType": "",
+    "type": "image",
+    "images": [
+      "resource/n8n/image1.webp",
+      "resource/n8n/image2.webp",
+      "resource/n8n/image3.webp",
+      "resource/n8n/image4.webp"
+    ],
+    "preview": "resource/n8n/image1.webp"
+  },
+  {
     "name": "Infrastructure Design",
     "description": "My infrastructure design for microservice architecture and order management system",
     "technologies": [
@@ -110,23 +127,6 @@
       "resource/search-engine/preview2.webp"
     ],
     "preview": "resource/search-engine/preview1.webp"
-  },
-  {
-    "name": "N8N Agent",
-    "description": "Agent for N8N workflow automation",
-    "technologies": [
-      "N8N"
-    ],
-    "link": "",
-    "linkType": "",
-    "type": "image",
-    "images": [
-      "resource/n8n/image1.webp",
-      "resource/n8n/image2.webp",
-      "resource/n8n/image3.webp",
-      "resource/n8n/image4.webp"
-    ],
-    "preview": "resource/n8n/image1.webp"
   },
   {
     "name": "Travel Website",
