@@ -58,7 +58,7 @@
   },
   {
     "name": "CRUD GUI",
-    "description": "GUI for farm information management",
+    "description": "GUI for CPF farm information management",
     "technologies": [
       "React",
       "Tailwind CSS",
@@ -110,5 +110,40 @@
       "resource/search-engine/preview2.webp"
     ],
     "preview": "resource/search-engine/preview1.webp"
+  },
+  {
+    "name": "N8N Agent",
+    "description": "Agent for N8N workflow automation",
+    "technologies": [
+      "N8N"
+    ],
+    "link": "",
+    "linkType": "",
+    "type": "image",
+    "images": [
+      "resource/n8n/image1.webp",
+      "resource/n8n/image2.webp",
+      "resource/n8n/image3.webp",
+      "resource/n8n/image4.webp"
+    ],
+    "preview": "resource/n8n/image1.webp"
+  },
+  {
+    "name": "Travel Website",
+    "description": "",
+    "technologies": [
+      "React",
+      "Tailwind CSS",
+      "AOS Animation"
+    ],
+    "link": "https://solo-adventure.onrender.com/",
+    "linkType": "Deployment",
+    "type": "image",
+    "images": [
+      "resource/solo-adventure/image1.webp",
+      "resource/solo-adventure/image2.webp",
+      "resource/solo-adventure/image3.webp"
+    ],
+    "preview": "resource/solo-adventure/image1.webp"
   }
 ]

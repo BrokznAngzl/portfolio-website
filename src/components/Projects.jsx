@@ -26,8 +26,7 @@ function Projects() {
                     </h2>
 
                     <p className="mt-4 text-gray-400 max-w-2xl mx-auto">
-                        Some of the projects I have worked on and built with
-                        modern technologies.
+                        Projects I've built while learning, experimenting, and growing as a developer.
                     </p>
                 </div>
 

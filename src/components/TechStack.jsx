@@ -1,10 +1,15 @@
 function TechStack() {
     const technologies = [
+        "Java",
+        "Spring Boot",
         "React.js",
-        "Node.js",
-        "MongoDB",
         "Tailwind CSS",
         "Python",
+        "C",
+        // "Openshift",
+        // "K8s",
+        // "Docker",
+        // "Nginx"
     ];
 
     return (
