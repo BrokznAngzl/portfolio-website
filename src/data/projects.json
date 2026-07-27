@@ -80,7 +80,7 @@
   },
   {
     "name": "CRUD API",
-    "description": "CRUD API for farm information management",
+    "description": "CRUD API for CPF farm information management",
     "technologies": [
       "Java",
       "Spring Boot",
