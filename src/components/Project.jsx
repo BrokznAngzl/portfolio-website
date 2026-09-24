@@ -11,18 +11,18 @@ function Project(props) {
             <div data-aos={aosType} data-aos-anchor-placement="top-bottom">
                 <div
                     className="bg-darker border border-gray-800 rounded-2xl p-6
-                shadow-glow mb-16"
+                    shadow-glow mb-16"
                 >
                     {/* Image */}
                     <div
                         className="w-full aspect-video rounded-xl bg-gray-800/60
-                    animate-pulse mb-6"
+                        animate-pulse mb-6"
                     />
 
                     {/* Name */}
                     <div
                         className="h-7 w-3/5 bg-gray-800/60 rounded
-                    animate-pulse mb-3"
+                        animate-pulse mb-3"
                     />
 
                     {/* Description */}
@@ -41,7 +41,7 @@ function Project(props) {
                     {/* Link */}
                     <div
                         className="h-6 w-24 bg-gray-800/60 rounded
-                    animate-pulse"
+                        animate-pulse"
                     />
                 </div>
             </div>
@@ -55,7 +55,8 @@ function Project(props) {
                     href={project.link}
                     target="_blank"
                     onClick={(e) => e.stopPropagation()}
-                    className="inline-flex items-center text-primary font-semibold hover:text-secondary transition-colors"
+                    className="inline-flex items-center text-primary font-semibold
+                    hover:text-secondary transition-colors"
                 >
                     {project.linkType}
                     <span className="ml-2">→</span>
@@ -66,17 +67,21 @@ function Project(props) {
         return null;
     }
 
+    const technologyCount = project.technologies.length;
+
     return (
         <>
             <div data-aos={aosType} data-aos-anchor-placement="top-bottom">
                 <div
-                    className="group bg-darker border border-gray-800 rounded-2xl p-6 shadow-glow
-                    hover:shadow-glow-hover hover:scale-105 transition-all duration-300 mb-16 cursor-pointer"
+                    className="group bg-darker border border-gray-800 rounded-2xl p-6
+                    shadow-glow hover:shadow-glow-hover hover:scale-105
+                    transition-all duration-300 mb-16 cursor-pointer"
                     onClick={() => setIsOpen(true)}
                 >
                     {/* Project Image */}
                     <div
-                        className="w-full aspect-video rounded-xl bg-gradient-to-br from-gray-700/40 to-dark/40
+                        className="w-full aspect-video rounded-xl
+                        bg-gradient-to-br from-gray-700/40 to-dark/40
                         flex items-center justify-center mb-6 overflow-hidden"
                     >
                         <img
@@ -92,26 +97,40 @@ function Project(props) {
                     </h3>
 
                     {/* Description */}
-                    <p className="text-gray-400 text-sm leading-5 mb-5 h-[2.5rem] flex items-end line-clamp-2">
+                    <p
+                        className="text-gray-400 text-sm leading-5 mb-5
+                        h-[2.5rem] flex items-end line-clamp-2"
+                    >
                         {project.description}
                     </p>
 
                     {/* Technologies */}
-                    <div className="flex flex-wrap gap-2 mb-6">
+                    <div className="flex flex-wrap gap-1.5 mb-6 h-[28px] overflow-hidden">
                         {project.technologies.map((technology) => (
                             <span
                                 key={technology}
-                                className="px-2.5 py-1 text-xs rounded-full bg-dark border border-gray-800 text-gray-300"
+                                className={`
+                                    px-2 py-0.5 rounded-full bg-dark
+                                    border border-gray-800 text-gray-300
+                                    whitespace-nowrap
+                                    ${
+                                    technologyCount >= 6
+                                        ? "text-[10px]"
+                                        : "text-xs"
+                                }
+                                `}
                             >
                                 {technology}
                             </span>
                         ))}
                     </div>
 
+                    {/* Link */}
                     {renderLink()}
                 </div>
             </div>
 
+            {/* Modal Popup */}
             {isOpen && (
                 <PopUp
                     project={project}
