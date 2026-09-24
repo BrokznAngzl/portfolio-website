@@ -1,9 +1,7 @@
+import footerData from "../data/footer.json";
+
 function Footer() {
-    const socialLinks = [
-        { name: "GitHub", url: "https://github.com/BrokznAngzl", icon: "🔗" },
-        { name: "LinkedIn", url: "#", icon: "💼" },
-        { name: "Email", url: "mailto:your-email@example.com", icon: "✉️" },
-    ];
+    const { socialLinks } = footerData;
 
     return (
         <footer className="relative bg-darker border-t border-gray-800 py-10">

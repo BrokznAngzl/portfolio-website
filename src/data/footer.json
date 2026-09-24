@@ -1,0 +1,19 @@
+{
+  "socialLinks": [
+    {
+      "name": "GitHub",
+      "url": "https://github.com/BrokznAngzl",
+      "icon": "🔗"
+    },
+    {
+      "name": "LinkedIn",
+      "url": "https://www.linkedin.com/in/wisarut-hakaen-beng/",
+      "icon": "💼"
+    },
+    {
+      "name": "Email",
+      "url": "mailto:wisarut.hak@gmail.com",
+      "icon": "✉️"
+    }
+  ]
+}
