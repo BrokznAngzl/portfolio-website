@@ -5,9 +5,11 @@
     "technologies": [
       "Python",
       "YOLOV5",
-      "Pytorch",
+      "OpenCV",
+      "Google Colab",
+      "Roboflow",
+      "FireBase",
       "Line OA",
-      "Firebase",
       "Flask Web Hook"
     ],
     "link": "https://youtu.be/RtXs-CbPz80?si=A9LfISTm-7RkGZAn",
@@ -130,7 +132,7 @@
   },
   {
     "name": "Travel Website",
-    "description": "",
+    "description": "Travel website for discovering destinations and planning trips",
     "technologies": [
       "React",
       "Tailwind CSS",
@@ -145,5 +147,23 @@
       "resource/solo-adventure/image3.webp"
     ],
     "preview": "resource/solo-adventure/image1.webp"
+  },
+  {
+    "name": "KUSE Document Management",
+    "description": "Document management system for KUSE with PDF Viewer and Power Automate integration",
+    "technologies": [
+      "Microsoft PowerApp",
+      "PDF Viewer",
+      "Power Automate",
+      "SharePoint"
+    ],
+    "link": "https://youtu.be/u5yzJmUYLT0?si=mvsrsDlUhYcNjc-J",
+    "linkType": "Full Video",
+    "type": "iframe",
+    "video": "https://www.youtube.com/embed/u5yzJmUYLT0?si=7_xh_7axAFh68XpU",
+    "preview": "resource/document-management/document-management1.webp"
+  },
+  {
+    "isSkeleton": true
   }
 ]
