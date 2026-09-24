@@ -5,25 +5,16 @@ function Project(props) {
     const {project, aosType} = props;
     const [isOpen, setIsOpen] = useState(false);
 
-    {/* Skeleton */}
+    // Skeleton
     if (project.isSkeleton) {
         return (
             <div data-aos={aosType} data-aos-anchor-placement="top-bottom">
-                <div
-                    className="bg-darker border border-gray-800 rounded-2xl p-6
-                    shadow-glow mb-16"
-                >
+                <div className="bg-darker border border-gray-800 rounded-2xl p-6 shadow-glow mb-16">
                     {/* Image */}
-                    <div
-                        className="w-full aspect-video rounded-xl bg-gray-800/60
-                        animate-pulse mb-6"
-                    />
+                    <div className="w-full aspect-video rounded-xl bg-gray-800/60 animate-pulse mb-6" />
 
                     {/* Name */}
-                    <div
-                        className="h-7 w-3/5 bg-gray-800/60 rounded
-                        animate-pulse mb-3"
-                    />
+                    <div className="h-7 w-3/5 bg-gray-800/60 rounded animate-pulse mb-3" />
 
                     {/* Description */}
                     <div className="space-y-2 mb-5">
@@ -39,10 +30,7 @@ function Project(props) {
                     </div>
 
                     {/* Link */}
-                    <div
-                        className="h-6 w-24 bg-gray-800/60 rounded
-                        animate-pulse"
-                    />
+                    <div className="h-6 w-24 bg-gray-800/60 rounded animate-pulse" />
                 </div>
             </div>
         );
@@ -55,8 +43,7 @@ function Project(props) {
                     href={project.link}
                     target="_blank"
                     onClick={(e) => e.stopPropagation()}
-                    className="inline-flex items-center text-primary font-semibold
-                    hover:text-secondary transition-colors"
+                    className="inline-flex items-center text-primary font-semibold hover:text-secondary transition-colors"
                 >
                     {project.linkType}
                     <span className="ml-2">→</span>
@@ -67,23 +54,16 @@ function Project(props) {
         return null;
     }
 
-    const technologyCount = project.technologies.length;
-
     return (
         <>
             <div data-aos={aosType} data-aos-anchor-placement="top-bottom">
                 <div
-                    className="group bg-darker border border-gray-800 rounded-2xl p-6
-                    shadow-glow hover:shadow-glow-hover hover:scale-105
-                    transition-all duration-300 mb-16 cursor-pointer"
+                    className="group bg-darker border border-gray-800 rounded-2xl p-6 shadow-glow hover:shadow-glow-hover hover:scale-[1.02] transition-all duration-300 mb-16 cursor-pointer"
                     onClick={() => setIsOpen(true)}
                 >
                     {/* Project Image */}
                     <div
-                        className="w-full aspect-video rounded-xl
-                        bg-gradient-to-br from-gray-700/40 to-dark/40
-                        flex items-center justify-center mb-6 overflow-hidden"
-                    >
+                        className="w-full aspect-video rounded-xl bg-gradient-to-br from-gray-700/40 to-dark/40 flex items-center justify-center mb-6 overflow-hidden">
                         <img
                             src={project.preview}
                             alt={project.name}
@@ -97,32 +77,27 @@ function Project(props) {
                     </h3>
 
                     {/* Description */}
-                    <p
-                        className="text-gray-400 text-sm leading-5 mb-5
-                        h-[2.5rem] flex items-end line-clamp-2"
-                    >
+                    <p className="text-gray-400 text-sm leading-5 mb-5 h-[2.5rem] flex items-end line-clamp-2">
                         {project.description}
                     </p>
 
                     {/* Technologies */}
-                    <div className="flex flex-wrap gap-1.5 mb-6 h-[28px] overflow-hidden">
-                        {project.technologies.map((technology) => (
+                    <div className="flex flex-nowrap gap-1.5 mb-6 overflow-hidden">
+                        {project.technologies.slice(0, 7).map((technology) => (
                             <span
                                 key={technology}
-                                className={`
-                                    px-2 py-0.5 rounded-full bg-dark
-                                    border border-gray-800 text-gray-300
-                                    whitespace-nowrap
-                                    ${
-                                    technologyCount >= 6
-                                        ? "text-[10px]"
-                                        : "text-xs"
-                                }
-                                `}
+                                className="shrink-0 px-2 py-0.5 text-[10px] rounded-full bg-dark border border-gray-800 text-gray-300 whitespace-nowrap"
                             >
                                 {technology}
                             </span>
                         ))}
+
+                        {project.technologies.length > 7 && (
+                            <span
+                                className="shrink-0 px-2 py-0.5 text-[10px] rounded-full bg-dark border border-gray-800 text-gray-300">
+                                    ...
+                            </span>
+                        )}
                     </div>
 
                     {/* Link */}
@@ -132,10 +107,7 @@ function Project(props) {
 
             {/* Modal Popup */}
             {isOpen && (
-                <PopUp
-                    project={project}
-                    onClose={() => setIsOpen(false)}
-                />
+                <PopUp project={project} onClose={() => setIsOpen(false)}/>
             )}
         </>
     );
