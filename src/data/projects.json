@@ -119,7 +119,12 @@
     "description": "Google Clone for KUSE Search Engine",
     "technologies": [
       "React",
-      "Tailwind CSS"
+      "Tailwind CSS",
+      "MySQL",
+      "DJango",
+      "Python Anywhere",
+      "Cosine Similarity",
+      "PageRank"
     ],
     "link": "https://elgoog.onrender.com",
     "linkType": "Deployment",
