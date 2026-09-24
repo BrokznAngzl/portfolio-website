@@ -5,27 +5,65 @@ function Project(props) {
     const {project, aosType} = props;
     const [isOpen, setIsOpen] = useState(false);
 
+    {/* Skeleton */}
+    if (project.isSkeleton) {
+        return (
+            <div data-aos={aosType} data-aos-anchor-placement="top-bottom">
+                <div
+                    className="bg-darker border border-gray-800 rounded-2xl p-6
+                shadow-glow mb-16"
+                >
+                    {/* Image */}
+                    <div
+                        className="w-full aspect-video rounded-xl bg-gray-800/60
+                    animate-pulse mb-6"
+                    />
+
+                    {/* Name */}
+                    <div
+                        className="h-7 w-3/5 bg-gray-800/60 rounded
+                    animate-pulse mb-3"
+                    />
+
+                    {/* Description */}
+                    <div className="space-y-2 mb-5">
+                        <div className="h-4 w-full bg-gray-800/60 rounded animate-pulse" />
+                        <div className="h-4 w-4/5 bg-gray-800/60 rounded animate-pulse" />
+                    </div>
+
+                    {/* Technologies */}
+                    <div className="flex gap-2 mb-6">
+                        <div className="h-7 w-20 bg-gray-800/60 rounded-full animate-pulse" />
+                        <div className="h-7 w-24 bg-gray-800/60 rounded-full animate-pulse" />
+                        <div className="h-7 w-16 bg-gray-800/60 rounded-full animate-pulse" />
+                    </div>
+
+                    {/* Link */}
+                    <div
+                        className="h-6 w-24 bg-gray-800/60 rounded
+                    animate-pulse"
+                    />
+                </div>
+            </div>
+        );
+    }
+
     function renderLink() {
         if (project.link) {
             return (
                 <a
-                    href={project.link} target="_blank"
+                    href={project.link}
+                    target="_blank"
                     onClick={(e) => e.stopPropagation()}
                     className="inline-flex items-center text-primary font-semibold hover:text-secondary transition-colors"
                 >
                     {project.linkType}
                     <span className="ml-2">→</span>
                 </a>
-            )
-        } else {
-            return (
-                <a
-                    className="inline-flex items-center text-primary font-semibold hover:text-secondary transition-colors"
-                >
-                    <span className="ml-2"></span>
-                </a>
-            )
+            );
         }
+
+        return null;
     }
 
     return (
@@ -60,25 +98,25 @@ function Project(props) {
 
                     {/* Technologies */}
                     <div className="flex flex-wrap gap-2 mb-6">
-                    {project.technologies.map((technology) => (
+                        {project.technologies.map((technology) => (
                             <span
                                 key={technology}
                                 className="px-2.5 py-1 text-xs rounded-full bg-dark border border-gray-800 text-gray-300"
                             >
-                {technology}
-            </span>
+                                {technology}
+                            </span>
                         ))}
                     </div>
 
-                    {/* Link */}
                     {renderLink()}
-
                 </div>
             </div>
 
-            {/* Modal Popup */}
             {isOpen && (
-                <PopUp project={project} onClose={() => setIsOpen(false)}/>
+                <PopUp
+                    project={project}
+                    onClose={() => setIsOpen(false)}
+                />
             )}
         </>
     );
