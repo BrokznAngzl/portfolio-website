@@ -78,6 +78,29 @@
     "preview": "resource/microservice-infra/microservice-structure.webp"
   },
   {
+    "name": "CICD Pipeline Automation Deployment",
+    "description": "A hands-on project to build and deploy a Spring Boot application using GitHub Actions and OpenShift",
+    "technologies": [
+      "Java 21",
+      "Spring Boot",
+      "Docker",
+      "GitHub Actions",
+      "GHCR",
+      "Red Hat OpenShift",
+      "Kubernetes"
+    ],
+    "link": "https://github.com/BrokznAngzl/cicd-automation-deployment",
+    "linkType": "Github Repository",
+    "type": "image",
+    "images": [
+      "resource/cicd-automation-deployment/img4.png",
+      "resource/cicd-automation-deployment/img1.png",
+      "resource/cicd-automation-deployment/img2.png",
+      "resource/cicd-automation-deployment/img3.png"
+    ],
+    "preview": "resource/cicd-automation-deployment/img4.png"
+  },
+  {
     "name": "CRUD GUI",
     "description": "GUI for CPF farm information management",
     "technologies": [
@@ -169,28 +192,5 @@
     "type": "iframe",
     "video": "https://www.youtube.com/embed/u5yzJmUYLT0?si=7_xh_7axAFh68XpU",
     "preview": "resource/document-management/document-management1.webp"
-  },
-  {
-    "name": "CICD Pipeline Automation Deployment",
-    "description": "A hands-on project to build and deploy a Spring Boot application using GitHub Actions and OpenShift",
-    "technologies": [
-      "Java 21",
-      "Spring Boot",
-      "Docker",
-      "GitHub Actions",
-      "GHCR",
-      "Red Hat OpenShift",
-      "Kubernetes"
-    ],
-    "link": "https://github.com/BrokznAngzl/cicd-automation-deployment",
-    "linkType": "Github Repository",
-    "type": "image",
-    "images": [
-      "resource/cicd-automation-deployment/img4.png",
-      "resource/cicd-automation-deployment/img1.png",
-      "resource/cicd-automation-deployment/img2.png",
-      "resource/cicd-automation-deployment/img3.png"
-    ],
-    "preview": "resource/cicd-automation-deployment/img4.png"
   }
 ]
